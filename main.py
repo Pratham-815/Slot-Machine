@@ -49,4 +49,4 @@ def get_bet():
 def main():
     balance = deposit()
     lines = get_no_of_lines()
-    print(balance, lines)
+    bet = get_bet()
