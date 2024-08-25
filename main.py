@@ -45,6 +45,8 @@ def get_bet():
         else:
             print("Invalid amount. Please enter a valid number.")
 
+    return amount
+
 
 def main():
     balance = deposit()
