@@ -50,3 +50,8 @@ def main():
     balance = deposit()
     lines = get_no_of_lines()
     bet = get_bet()
+    total_bet = lines * bet
+    print(f"You are betting ${bet} on {lines}. Total bet is {total_bet}")
+
+
+main()
