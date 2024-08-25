@@ -33,6 +33,19 @@ def get_no_of_lines():
     return lines
 
 
+def get_bet():
+    while True:
+        amount = input("Enter the amount you want to bet on each line: $")
+        if amount.isdigit():
+            amount = int(amount)
+            if MIN_BET <= amount <= MAX_BET:
+                break
+            else:
+                print(f"Amount must be between ${MIN_BET} - ${MAX_BET}")
+        else:
+            print("Invalid amount. Please enter a valid number.")
+
+
 def main():
     balance = deposit()
     lines = get_no_of_lines()
