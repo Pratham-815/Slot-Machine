@@ -7,7 +7,7 @@ MIN_BET = 1
 ROWS = 3
 COLS = 3
 
-symbols = {
+symbol_count = {
     "A": 2,
     "B": 4,
     "C": 6,
@@ -33,6 +33,15 @@ def get_slot_machine_spin(rows, cols, symbols):
         columns.append(column)
 
     return columns
+
+
+def print_slot_machine(columns):
+    for row in range(len(columns(0))):
+        for i, column in enumerate(columns[0]):
+            if i != len(columns)-1:
+                print(column[row], "|")
+            else:
+                print(column[row])
 
 
 def deposit():
